@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
+    'coupons.apps.CouponsConfig',
 ]
 
 MIDDLEWARE = [
@@ -129,8 +130,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-MEDIA_URL = '/media/' # a URL path for image files 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media/') # a path for saving image files
+MEDIA_URL = 'media/' # a URL path for image files 
+MEDIA_ROOT = BASE_DIR / 'media' # a path for saving image files
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
